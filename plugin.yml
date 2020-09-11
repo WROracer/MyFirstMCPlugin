@@ -1,0 +1,21 @@
+name: MyFirstPlugin
+version: 1.0
+main: de.wroracer.myfirstmcplugin.main.Main
+
+commands:
+  heal:
+    description: Dieser befehl heilt dich
+  kit:
+    description: Dieser befehl Oefnett das Kit Inventar
+  setspawn:
+    description: Dieser befehl setzt dein Spawn punkt
+  spawn:
+    description: Dieser befehl teleportiert dich zum Spawn
+  party:
+    description: Dieser befehl startet eine Party
+  cc:
+    description: Dieser befehl Cleard den Chat
+  mute:
+    description: Mute/Entmute Andere Spieler
+  inv:
+    description: nutze save oder get
