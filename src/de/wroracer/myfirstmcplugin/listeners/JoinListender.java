@@ -29,6 +29,7 @@ public class JoinListender implements Listener {
 
         player.getInventory().addItem(new ItemBuilder(Material.GOLD_AXE).setName("§6Axt des Todes").setLore("§aLore1","§5Lore2").buid());
         player.getInventory().addItem(new ItemBuilder(Material.WOOL,(short)6).setLore("§cTest Lore").setAmount(42).buid());
+        System.out.println("Login Event");
     }
 
 }
