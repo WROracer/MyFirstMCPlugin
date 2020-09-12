@@ -2,6 +2,7 @@ package de.wroracer.myfirstmcplugin.main;
 
 import de.wroracer.myfirstmcplugin.commands.*;
 import de.wroracer.myfirstmcplugin.listeners.JoinListender;
+import de.wroracer.myfirstmcplugin.util.RecipeLoader;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
@@ -14,6 +15,8 @@ public class Main extends JavaPlugin{
     public void onEnable() {
         plugin = this;
         MuteCommand muteCommand = new MuteCommand();
+
+        new RecipeLoader().registerRecipes();
 
         getCommand("heal").setExecutor(new HealCommand());
         getCommand("kit").setExecutor(new KitCommand());
